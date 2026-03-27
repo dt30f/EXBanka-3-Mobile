@@ -176,7 +176,6 @@ private fun LoggedInShell(
                 item = selectedVerification,
                 uiState = verificationState,
                 onShowCode = verificationViewModel::showVerificationCode,
-                onConfirm = verificationViewModel::confirmSelected,
                 onIgnore = verificationViewModel::rejectSelected,
                 onBack = verificationViewModel::closeDetails,
             )
