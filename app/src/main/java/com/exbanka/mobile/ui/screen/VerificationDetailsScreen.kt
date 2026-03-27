@@ -27,7 +27,6 @@ fun VerificationDetailsScreen(
     item: ActivityItem,
     uiState: VerificationUiState,
     onShowCode: () -> Unit,
-    onConfirm: () -> Unit,
     onIgnore: () -> Unit,
     onBack: () -> Unit,
 ) {
@@ -83,9 +82,6 @@ fun VerificationDetailsScreen(
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     Button(onClick = onShowCode, modifier = Modifier.fillMaxWidth()) {
                         Text("Prikaži kod")
-                    }
-                    Button(onClick = onConfirm, modifier = Modifier.fillMaxWidth()) {
-                        Text("Potvrdi odmah")
                     }
                     OutlinedButton(onClick = onIgnore, modifier = Modifier.fillMaxWidth()) {
                         Text("Ignoriši")
